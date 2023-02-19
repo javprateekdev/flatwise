@@ -1,38 +1,87 @@
-.App {
+.Header{
+  height:10vh;
+  background:white;
+  width:78%;
+  display:flex;
+  padding:5px;
+  box-shadow:0 1px 6px 1px #ccc;
+  margin-left:20%;
+}
+.parameterspic{
+  width:30px
+}
+.parameterspic:hover{
+  width:60px
+}
+
+.button-8 {
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #39739d;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 10px;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
   text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button-8:hover,
+.button-8:focus {
+  background-color: #dfb3ea;
+  color: #2c5777;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button-8:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+  background-color: #dfb3ea;
+  transition: ease-in-out, width 5s ease-in-out;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button-8:active {
+  background-color: #e48fe4;
+  box-shadow: none;
+  color: #2c5777;
+}
+
+
+
+.button-81:focus {
+  background-color: #6aa2c2;
+  color: #2c5777;
+}
+
+.modal-content {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 200%!important;
+  color: var(--bs-modal-color);
+  pointer-events: auto;
+  background-color: var(--bs-modal-bg);
+  background-clip: padding-box;
+  border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+  border-radius: var(--bs-modal-border-radius);
+  outline: 0;
+  height: 80vh!important;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-dialog {
+    max-width: var(--bs-modal-width);
+    margin-right: auto;
+    margin-left: 20%!important;
 }
