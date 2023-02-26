@@ -4,7 +4,7 @@ import axios from 'axios';
 
 export const getalldata=async ()=>{
     try{
-       return await axios.get(`http://localhost:8000/label`);
+       return await axios.get(`https://silly-goat-fatigues.cyclic.app/label`);
     }catch(error){
         console.log('Eror while calling getUsers API',error)
     }
